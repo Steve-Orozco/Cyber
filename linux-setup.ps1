@@ -17,7 +17,7 @@ At line:1 char:1
     + CategoryInfo          : SecurityError: (:) [], PSSecurityException
     + FullyQualifiedErrorId : UnauthorizedAccess" -ForegroundColor Yellow `n`n
 
-Write-Host "It is due to ExecutionPolicy, run the following command as Administrator `n`n NOTE: When install is finished it will set ExecutionPolicy back to default." -ForegroundColor Red `n`n
+Write-Host "It is due to ExecutionPolicy, run the following command as Administrator `n`n Set-ExecutionPolicy -ex Bypass `n`nNOTE: When install is finished it will set ExecutionPolicy back to default." -ForegroundColor Red `n`n
 
 $WSL_enabled = (((Get-WindowsOptionalFeature -online -FeatureName Microsoft-Windows-Subsystem-Linux | Select-object -Property State) | Select-String -Pattern "State") -like "@{State=Enabled}")
 
