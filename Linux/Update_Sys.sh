@@ -8,8 +8,6 @@ printf "$B" && echo -e "This will update your machine!"
 
 sudo apt update && sudo apt upgrade -yy
 
-prints who is logged into system
-
 printf echo -e "Checking Who is using System"
 
 printf "$GREEN" && w 
