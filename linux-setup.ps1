@@ -159,7 +159,7 @@ Start-sleep 3
 
 # Setting ExecutionPolicy to Default (Restricted)
 
-Set-ExecutionPolicy -ExecutionPolicy -Restricted
+Set-ExecutionPolicy -ExecutionPolicy Restricted
 
 exit
 
