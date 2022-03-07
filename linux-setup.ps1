@@ -53,7 +53,7 @@ Start-Sleep -Seconds 5
 function Menu
 {
     param ([string]$Title = 'Only reboot, after WSl and VPM are installed..')
-    param ([string]$Exit = 'Only reboot, after WSl and VPM are installed..')
+    param ([string]$Exit = 'If WSL and VPM and installed, type 'c'..')
 
     Clear-Host
     Write-Host "================ $Title ====================" 
@@ -92,7 +92,7 @@ until ($inputs -eq 'c')
 function Menu
 {
     param ([string]$Title = 'Pick a Linux Distro to install on wsl')
-    param ([string]$Exit = 'Make sure to press C to continue this install')
+    param ([string]$Exit = 'Make sure to press C to continue this install after linux is done installing')
 
     Clear-Host
     Write-Host "================ $Title ====================" 
