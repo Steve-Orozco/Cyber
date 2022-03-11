@@ -53,7 +53,7 @@ Start-Sleep -Seconds 5
 function Menu
 {
     param ([string]$Title = 'Only reboot, after WSl and VPM are installed..')
-    param ([string]$Exit = 'If WSL and VPM and installed, type 'c'..')
+    param ([string]$Exit = 'If WSL and VPM and installed, type "c"')
 
     Clear-Host
     Write-Host "================ $Title ====================" 
