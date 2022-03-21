@@ -5,6 +5,9 @@ This script is meant to install WSL, Windows-Terminal, Linux Distro and enable V
 
 Feel free to ask how this works, and more importantly, improve on this code if you would like!
 
+Need at add https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+This will install WSL2. Will eventually get to it
+
 #>
 
 Write-Host "If you are getting this error:" -ForegroundColor Red
